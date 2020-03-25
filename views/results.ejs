@@ -1,0 +1,19 @@
+<%- include ('templates/header'); -%>
+
+<div class='container'>
+    <div class='jumbotron'>
+        <h1> SEARCH RESULTS </h1>
+        <button class='btn btn-info' onclick='location.href="/";'>Search Again</button>
+    </div>
+
+    <ul id='movies-list'>
+	        <li>
+	            <img class='poster' src=<%=data.cover.medium%> />
+	            <div>
+                    <h5><%=data.title%></h5>
+                </div>
+	        </li>
+    <ul>
+</div>
+
+<%- include ('templates/footer'); -%>
